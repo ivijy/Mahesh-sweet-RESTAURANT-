@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  
+</nav>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href=""style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Sweets & Restaurant | Chungi, Sitapur</title>
+  <meta name="description" content="Mahesh Sweets & Restaurant — Authentic Indian sweets & delicious food in Chungi, Sitapur, UP. Fresh sweets, fast food & main course. Home delivery in 30 minutes.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+<script src="script.js"></script>
+<!-- ============ NAVIGATION ============ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🍬</div>
+    <div class="logo-text">
+      <span class="logo-name">Mahesh Sweets</span>
+      <span class="logo-sub">& Restaurant</span>
+    </div>
+  </a>
+
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="menu.html" class="nav-cta">Order Now</a>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:14px;">
+    <button class="cart-btn-nav" aria-label="Open cart">
+      🛒 Cart
+      <span class="cart-count" style="display:none">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">✦ Est. in Sitapur, Uttar Pradesh ✦</div>
+    <h1>Mahesh <span>Sweets</span> &<br>Restaurant</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">Delicious Sweets &amp; Authentic Taste</p>
+    <div class="hero-btns">
+      <a href="menu.html" class="btn-primary">🍽️ Explore Menu</a>
+      <a href="menu.html" class="btn-secondary">📞 Order Now</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats-banner">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number" data-value="15" data-suffix="+">15+</div>
+      <div class="stat-label">Years of Taste</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-value="50" data-suffix="+">50+</div>
+      <div class="stat-label">Menu Items</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-value="5000" data-suffix="+">5000+</div>
+      <div class="stat-label">Happy Customers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-value="30" data-suffix="min">30min</div>
+      <div class="stat-label">Delivery Time</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED CATEGORIES ============ -->
+<section class="categories-section section-pad">
+  <div class="section-header">
+    <span class="section-label">✦ Our Specialties ✦</span>
+    <h2 class="section-title">Explore Our <span>Delicious</span> Categories</h2>
+    <div class="section-divider">
+      <div class="dline"></div><div class="ddot"></div><div class="dline"></div>
+    </div>
+    <p class="section-desc">From traditional Indian sweets to modern fast food — every bite is a celebration of flavor.</p>
+  </div>
+
+  <div class="categories-grid">
+    <!-- Sweets -->
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1602665741019-1abe1a46a545?w=800&q=80" alt="Indian Sweets" loading="lazy">
+      <div class="category-overlay">
+        <span class="cat-icon">🍮</span>
+        <h3 class="cat-name">Indian Sweets</h3>
+        <p class="cat-desc">Rasmalai, Gulab Jamun, Rajbhog, Rasgulla & freshly made Rabdi crafted with pure ingredients.</p>
+        <a href="menu.html#sweets" class="cat-link">Explore Sweets →</a>
+      </div>
+    </div>
+
+    <!-- Fast Food -->
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Fast Food" loading="lazy">
+      <div class="category-overlay">
+        <span class="cat-icon">🍔</span>
+        <h3 class="cat-name">Fast Food</h3>
+        <p class="cat-desc">Burgers, Sandwiches, Noodles, Manchurian & Fried Rice — hot, fresh and full of flavour.</p>
+        <a href="menu.html#fastfood" class="cat-link">Explore Fast Food →</a>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80" alt="Main Course" loading="lazy">
+      <div class="category-overlay">
+        <span class="cat-icon">🍛</span>
+        <h3 class="cat-name">Main Course</h3>
+        <p class="cat-desc">Mini Meals, Paneer Chilli, South Indian Dosa & Uttapam — hearty meals for the whole family.</p>
+        <a href="menu.html#maincourse" class="cat-link">Explore Main Course →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="why-section section-pad">
+  <div class="why-grid">
+    <div class="why-image">
+      <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&q=80" alt="Fresh Sweets Preparation" loading="lazy">
+      <div class="why-badge">
+        <div class="badge-num">100%</div>
+        <div class="badge-text">Fresh<br>Daily</div>
+      </div>
+    </div>
+
+    <div class="why-content">
+      <span class="section-label">✦ Why Choose Us ✦</span>
+      <h2 class="section-title">Taste That Feels<br>Like <span>Home</span></h2>
+      <p style="color:var(--text-muted);margin-top:18px;line-height:1.8;font-size:0.95rem;">
+        At Mahesh Sweets & Restaurant, we believe every meal should feel like a celebration. For over 15 years, we've been serving the people of Sitapur with love, quality, and the most authentic flavors from across India.
+      </p>
+
+      <div class="why-features">
+        <div class="why-feature">
+          <div class="feat-icon">🥛</div>
+          <div>
+            <h4>Pure & Fresh Ingredients</h4>
+            <p>We use only the freshest milk, pure desi ghee, and premium ingredients sourced daily to ensure authentic taste in every bite.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="feat-icon">⚡</div>
+          <div>
+            <h4>30-Minute Home Delivery</h4>
+            <p>Hot, fresh food delivered to your doorstep in Chungi and surrounding areas within 30 minutes — guaranteed.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="feat-icon">👨‍🍳</div>
+          <div>
+            <h4>Expert Mithai Chefs</h4>
+            <p>Our skilled chefs bring decades of experience in traditional Indian sweet-making and modern culinary arts.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="feat-icon">💰</div>
+          <div>
+            <h4>Affordable Prices</h4>
+            <p>Premium quality at pocket-friendly prices — because great food should be accessible to everyone in our community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials-section section-pad">
+  <div class="section-header">
+    <span class="section-label">✦ What People Say ✦</span>
+    <h2 class="section-title">Loved by <span>Sitapur</span></h2>
+    <div class="section-divider">
+      <div class="dline"></div><div class="ddot"></div><div class="dline"></div>
+    </div>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <span class="stars">★★★★★</span>
+      <p class="test-text">"The Rasmalai here is absolutely divine! I've tried many sweet shops in Sitapur, but Mahesh Sweets is in a class of its own. Pure milk, perfect sweetness — just wow."</p>
+      <div class="test-author">
+        <div class="author-avatar">R</div>
+        <div>
+          <div class="author-name">Raju Verma</div>
+          <div class="author-loc">Chungi, Sitapur</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <span class="stars">★★★★★</span>
+      <p class="test-text">"Ordered Paneer Gravy with Paratha for my family dinner and it arrived hot in under 30 minutes! The taste was restaurant-quality. Will definitely order again."</p>
+      <div class="test-author">
+        <div class="author-avatar">S</div>
+        <div>
+          <div class="author-name">Sunita Mishra</div>
+          <div class="author-loc">Sitapur</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <span class="stars">★★★★★</span>
+      <p class="test-text">"Best Gulab Jamun in the entire district — I'm not exaggerating! The Rajbhog is also exceptional. My kids absolutely love this place. Highly recommended!"</p>
+      <div class="test-author">
+        <div class="author-avatar">A</div>
+        <div>
+          <div class="author-name">Alok Srivastava</div>
+          <div class="author-loc">Sitapur, UP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-banner">
+  <h2>🍬 Ready to Order Something <em style="color:var(--gold)">Delicious?</em></h2>
+  <p>Explore our full menu and get fresh food delivered to your door in just 30 minutes.</p>
+  <a href="menu.html" class="btn-primary">View Full Menu</a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo-name">🍬 Mahesh Sweets & Restaurant</span>
+      <p>Serving authentic Indian sweets and delicious food to the families of Sitapur since over a decade. Quality, taste, and love in every bite.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="menu.html">🍽️ Menu</a></li>
+        <li><a href="about.html">ℹ️ About Us</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+        <li><a href="menu.html">🛒 Order Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Menu</h4>
+      <ul>
+        <li><a href="menu.html#sweets">🍮 Indian Sweets</a></li>
+        <li><a href="menu.html#fastfood">🍔 Fast Food</a></li>
+        <li><a href="menu.html#maincourse">🍛 Main Course</a></li>
+        <li><a href="menu.html">🥤 Beverages</a></li>
+        <li><a href="menu.html">🎁 Special Combos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h4>Find Us</h4>
+      <p><span class="fi">📍</span> Chungi, Sitapur, Uttar Pradesh — 261001</p>
+      <p><span class="fi">📞</span> +91 98765 43210</p>
+      <p><span class="fi">📞</span> +91 91234 56789</p>
+      <p><span class="fi">⏰</span> Mon–Sun: 7:00 AM – 10:00 PM</p>
+      <p><span class="fi">🚚</span> Free delivery above ₹200</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <span class="gold">Mahesh Sweets & Restaurant</span>. All rights reserved.</p>
+    <p>Made with ❤️ for Sitapur | <span class="gold">Chungi, UP</span></p>
+  </div>
+</footer>
+
+<!-- ============ CART SIDEBAR ============ -->
+<div class="cart-overlay"></div>
+<div class="cart-sidebar">
+  <div class="cart-header">
+    <h3>🛒 Your Cart</h3>
+    <button class="cart-close">✕</button>
+  </div>
+  <div class="cart-items">
+    <div class="cart-empty">
+      <div class="empty-icon">🛒</div>
+      <p>Your cart is empty.<br>Add some delicious items!</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total Amount</span>
+      <strong>₹0</strong>
+    </div>
+    <button class="checkout-btn">Place Order ✦</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

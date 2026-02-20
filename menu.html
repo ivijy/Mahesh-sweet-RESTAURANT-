@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Mahesh Sweets & Restaurant</title>
+  <meta name="description" content="Full menu of Mahesh Sweets & Restaurant — Sweets, Fast Food, and Main Course with prices. Order online for home delivery in Sitapur.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🍬</div>
+    <div class="logo-text">
+      <span class="logo-name">Mahesh Sweets</span>
+      <span class="logo-sub">& Restaurant</span>
+    </div>
+  </a>
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="menu.html" class="nav-cta">Order Now</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <button class="cart-btn-nav" aria-label="Open cart">
+      🛒 Cart
+      <span class="cart-count" style="display:none">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1920&q=80')">
+  <div class="page-hero-content">
+    <h1>Our Menu</h1>
+    <p>Fresh, Authentic & Made with Love</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="bsep">›</span>
+      <span>Menu</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU CONTENT ============ -->
+<section class="section-pad" style="background:var(--cream)">
+
+  <!-- Filter tabs -->
+  <div class="menu-filters">
+    <button class="filter-btn active" data-filter="all">All Items</button>
+    <button class="filter-btn" data-filter="sweets">🍮 Sweets</button>
+    <button class="filter-btn" data-filter="fastfood">🍔 Fast Food</button>
+    <button class="filter-btn" data-filter="maincourse">🍛 Main Course</button>
+  </div>
+
+  <!-- ===== SWEETS ===== -->
+  <div class="menu-section" data-category="sweets" id="sweets">
+    <h2 class="menu-cat-title">🍮 Indian Sweets</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card" data-id="sw1" data-name="Rasmalai" data-price="60">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=75" alt="Rasmalai" loading="lazy">
+          <span class="menu-badge">Bestseller</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Rasmalai</h3>
+          <p class="menu-card-desc">Soft paneer discs soaked in saffron-flavored sweetened milk, garnished with pistachios.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹60 <small>/plate (2 pcs)</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="sw2" data-name="Gulab Jamun" data-price="50">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&q=75" alt="Gulab Jamun" loading="lazy">
+          <span class="menu-badge">Most Loved</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Gulab Jamun</h3>
+          <p class="menu-card-desc">Melt-in-mouth khoya balls soaked in rose-flavored sugar syrup. A timeless classic.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹50 <small>/plate (4 pcs)</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="sw3" data-name="Rajbhog" data-price="70">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1605197161432-b1e8bced2e43?w=600&q=75" alt="Rajbhog" loading="lazy">
+          <span class="menu-badge">Premium</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Rajbhog</h3>
+          <p class="menu-card-desc">Large saffron-flavored rasgulla stuffed with dry fruits and served in chilled syrup.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹70 <small>/plate (2 pcs)</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="sw4" data-name="Rasgulla" data-price="45">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1592459487564-ddc3d36f0c13?w=600&q=75" alt="Rasgulla" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Rasgulla</h3>
+          <p class="menu-card-desc">Spongy soft chenna balls simmered in light sugar syrup. Fresh, light, and irresistible.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹45 <small>/plate (4 pcs)</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="sw5" data-name="Rabdi" data-price="65">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=600&q=75" alt="Rabdi" loading="lazy">
+          <span class="menu-badge">Special</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Rabdi</h3>
+          <p class="menu-card-desc">Thick, creamy condensed milk dessert slow-cooked with saffron, cardamom & dry fruits.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹65 <small>/bowl</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FAST FOOD ===== -->
+  <div class="menu-section" data-category="fastfood" id="fastfood">
+    <h2 class="menu-cat-title">🍔 Fast Food</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card" data-id="ff1" data-name="Veg Manchurian + Fried Rice" data-price="120">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=75" alt="Manchurian Fried Rice" loading="lazy">
+          <span class="menu-badge">Bestseller</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Veg Manchurian + Fried Rice</h3>
+          <p class="menu-card-desc">Crispy vegetable dumplings in spicy Indo-Chinese sauce served with aromatic fried rice.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹120 <small>/full plate</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="ff2" data-name="Paneer Gravy + 2 Paratha" data-price="110">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=75" alt="Paneer Gravy Paratha" loading="lazy">
+          <span class="menu-badge">Popular</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Paneer Gravy + 2 Paratha</h3>
+          <p class="menu-card-desc">Rich, creamy paneer curry served with two buttery whole-wheat parathas. A wholesome meal.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹110 <small>/plate</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="ff3" data-name="Noodles" data-price="90">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=75" alt="Noodles" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Veg Hakka Noodles</h3>
+          <p class="menu-card-desc">Stir-fried egg noodles tossed with fresh veggies, soy sauce and spices. Hot & flavourful.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹90 <small>/plate</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="ff4" data-name="Veg Burger" data-price="70">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=75" alt="Burger" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Veg Burger</h3>
+          <p class="menu-card-desc">Crispy veggie patty with fresh lettuce, tomato, cheese and our special house sauce in a toasted bun.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹70 <small>/piece</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="ff5" data-name="Club Sandwich" data-price="80">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=75" alt="Sandwich" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Club Sandwich</h3>
+          <p class="menu-card-desc">Triple-layered toasted sandwich with veggies, cheese, and tangy sauces. Perfect snack anytime.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹80 <small>/piece</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== MAIN COURSE ===== -->
+  <div class="menu-section" data-category="maincourse" id="maincourse">
+    <h2 class="menu-cat-title">🍛 Main Course</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card" data-id="mc1" data-name="Mini Meals Thali" data-price="130">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&q=75" alt="Mini Meals" loading="lazy">
+          <span class="menu-badge">Value Meal</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Mini Meals Thali</h3>
+          <p class="menu-card-desc">Dal, sabzi, rice, 2 rotis, raita & papad. A complete, balanced, and satisfying meal.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹130 <small>/thali</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="mc2" data-name="Paneer Chilli" data-price="140">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=75" alt="Paneer Chilli" loading="lazy">
+          <span class="menu-badge">Spicy 🌶️</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Paneer Chilli</h3>
+          <p class="menu-card-desc">Tender paneer cubes stir-fried with bell peppers, onions and bold Indo-Chinese spices. Fiery & delicious.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹140 <small>/plate</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="mc3" data-name="Masala Dosa" data-price="90">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=75" alt="Masala Dosa" loading="lazy">
+          <span class="menu-badge">South Indian</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Masala Dosa</h3>
+          <p class="menu-card-desc">Crispy golden dosa filled with spiced potato filling. Served with coconut chutney & sambar.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹90 <small>/piece</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-id="mc4" data-name="Veg Uttapam" data-price="85">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&q=75" alt="Uttapam" loading="lazy">
+          <span class="menu-badge">South Indian</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Veg Uttapam</h3>
+          <p class="menu-card-desc">Thick, soft rice pancake topped with colorful fresh vegetables. Served with chutney & sambar.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">₹85 <small>/piece</small></div>
+            <button class="add-cart-btn">+ Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ ORDER INFO BANNER ============ -->
+<section class="cta-banner">
+  <h2>📦 Fast Delivery in <em style="color:var(--gold)">Sitapur</em></h2>
+  <p>Free delivery on orders above ₹200 • Chungi & surrounding areas • Open 7 AM – 10 PM daily</p>
+  <a href="contact.html" class="btn-primary">📞 Call to Order</a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo-name">🍬 Mahesh Sweets & Restaurant</span>
+      <p>Serving authentic Indian sweets and delicious food to the families of Sitapur since over a decade.</p>
+      <div class="social-links">
+        <a href="#" class="social-link">f</a>
+        <a href="#" class="social-link">📷</a>
+        <a href="#" class="social-link">💬</a>
+        <a href="#" class="social-link">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="menu.html">🍽️ Menu</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#sweets">🍮 Indian Sweets</a></li>
+        <li><a href="#fastfood">🍔 Fast Food</a></li>
+        <li><a href="#maincourse">🍛 Main Course</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <p><span class="fi">📍</span> Chungi, Sitapur, UP — 261001</p>
+      <p><span class="fi">📞</span> +91 98765 43210</p>
+      <p><span class="fi">⏰</span> 7:00 AM – 10:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span class="gold">Mahesh Sweets & Restaurant</span>. All rights reserved.</p>
+    <p>Chungi, Sitapur, <span class="gold">Uttar Pradesh</span></p>
+  </div>
+</footer>
+
+<!-- ============ CART SIDEBAR ============ -->
+<div class="cart-overlay"></div>
+<div class="cart-sidebar">
+  <div class="cart-header">
+    <h3>🛒 Your Cart</h3>
+    <button class="cart-close">✕</button>
+  </div>
+  <div class="cart-items">
+    <div class="cart-empty">
+      <div class="empty-icon">🛒</div>
+      <p>Your cart is empty.<br>Add some delicious items!</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total Amount</span>
+      <strong>₹0</strong>
+    </div>
+    <button class="checkout-btn">Place Order ✦</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
