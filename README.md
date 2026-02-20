@@ -51,6 +51,7 @@ This project demonstrates:
 (the GitHub Pages link here)
 
 
+https://ivijy.github.io/Mahesh-sweet-RESTAURANT-/
 
 📌 Future Improvements
 
